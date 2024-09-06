@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edo's Survey Form</title>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <h1 id="title">Edo's Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for your participation!</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="forms">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="forms">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="forms">
+                <label id="number-label" for="number">Your age (optional)</label>
+                <input id="number" type="number" min="13" max="120" placeholder="Select">
+            </div>
+
+            <div class="forms">
+                <p>Which platform do you play on?</p>
+                <select id="dropdown" name="platform" class="form-control" required>
+                    <option value="">Select an option</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="PC">PC</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Mobile">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="forms">
+                <p>Which game mode is your favorite?</p>
+                <select id="dropdown" name="favorite" class="form-control" required>
+                    <option value="">Select an option</option>
+                    <option value="Battle Royale">Battle Royale</option>
+                    <option value="Warzone">Warzone</option>
+                    <option value="Regular Multiplayer">Regular Multiplayer</option>
+                    <option value="Single/Story Mode">Single/Story Mode</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="forms">
+                <p>Would you like to participate in TTS?</p>
+                <label>
+                    <input name="TTS" value="yes" type="radio" class="input-radio" checked />Yes
+                </label>
+                <label>
+                    <input name="TTS" value="no" type="radio" class="input-radio" />No
+                </label>
+            </div>
+
+            <div class="forms">
+                <p>Would you like to try out our new game?</p>
+                <label>
+                    <input name="new_game" value="yes" type="radio" class="input-radio" required />Yes
+                </label>
+                <label>
+                    <input name="new_game" value="no" type="radio" class="input-radio" required />No
+                </label>
+            </div>
+
+            <div class="forms">
+                <ul class="checkbox-list">
+                    <li>
+                        <label for="subs">I would like to subscribe for the newest updates!</label>
+                        <input type="checkbox" name="subs" id="subs" value="newsletter">
+                    </li>
+                    <li>
+                        <label for="surveys">I would like to participate in surveys in the future!</label>
+                        <input type="checkbox" name="surveys" id="surveys" value="future-surveys">
+                    </li>
+                </ul>
+            </div>
+
+            <!--        
+            <div class="forms">
+                <label for="subs">I would like to subscribe for the newest updates!</label>
+                <input type="checkbox" name="subs" id="subs">
+            </div>
+            <div class="forms">
+                <label for="surveys">I would like to participate in surveys in the future!</label>
+                <input type="checkbox" name="surveys" id="surveys">
+            </div> -->
+
+            <div class="forms">
+                <p>Is there any feature you miss?</p>
+                <textarea id="review" class="input-textarea" name="review"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="forms">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

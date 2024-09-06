@@ -1,0 +1,159 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(34, 193, 195);
+    background: -moz-linear-gradient(0deg, rgba(34, 193, 195, 1) 30%, rgba(253, 187, 45, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34, 193, 195, 1) 30%, rgba(253, 187, 45, 1) 100%);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 30%, rgba(253, 187, 45, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3", endColorstr="#fdbb2d", GradientType=1);
+    font-family: "Montserrat", sans-serif;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main {
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#description {
+    font-size: 1.2em;
+    color: #666;
+}
+
+
+#survey-form {
+    background: rgb(253, 187, 45);
+    display: flex;
+    background: -moz-linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(34, 193, 195, 1) 90%);
+    background: -webkit-linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(34, 193, 195, 1) 90%);
+    background: linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(34, 193, 195, 1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdbb2d", endColorstr="#22c1c3", GradientType=1);
+    border: 0;
+    border-radius: 6px;
+    padding: 2rem;
+    filter: drop-shadow(10px 10px 4px #646471);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+input[type=radio],
+[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+
+.forms {
+    margin-bottom: 20px;
+}
+
+.checkbox-list {
+    list-style: none;
+    padding: 0;
+}
+
+.checkbox-list li {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.checkbox-list label {
+    float: left;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.checkbox-list input[type="checkbox"] {
+    float: left;
+    margin-top: 2px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.submit-button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 700px) {
+    .main {
+        padding: 20px;
+    }
+
+    #title {
+        font-size: 2em;
+    }
+}
